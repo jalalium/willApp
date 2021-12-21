@@ -2,9 +2,11 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: hello-ingress
+  labels:
+    app: wil-app
   annotations:
-    kubernetes.io/ingress.class: "traefik"
-    traefik.frontend.rule.type: PathPrefixStrip
+    ingress.kubernetes.io/ssl-redirect: "false"
+    traefik.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - http:

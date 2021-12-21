@@ -1,6 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
+  labels:
+    app: wil-app  
   name: wil-nodeport
 spec:
   type: ClusterIP
