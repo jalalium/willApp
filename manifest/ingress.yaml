@@ -14,4 +14,4 @@ spec:
       - path: /app
         backend:
           serviceName: wil-nodeport
-          servicePort: 80
+          servicePort: 8888
