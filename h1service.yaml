@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wil-nodeport
+  namespace: default
+spec:
+  type: ClusterIP
+  selector:
+    app: wilApp
+  ports:
+  - port: 80
+    targetPort: 8888
