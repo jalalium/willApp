@@ -15,6 +15,6 @@ spec:
       containers:
         - name: wil-app
           image: wil42/playground:v1
-          imagePullPolicy: always
+          imagePullPolicy: Always
           ports:
           - containerPort: 8888
