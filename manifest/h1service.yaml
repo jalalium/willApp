@@ -6,7 +6,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: wilApp
+    app: wil-app
   ports:
   - port: 80
     targetPort: 8888
